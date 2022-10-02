@@ -1,14 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="main.css">
-    <title>Projects</title>
-</head>
-<body>
-    <script src="app.js"></script>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="main.css" />
+
+    <title>Suite</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <a href="#" class="header__logo">
+          <img src="/assets/logo.svg" alt="header logo" />
+        </a>
+        <button class="header__btn btn">Request Beta Access</button>
+      </header>
+
+      <main class="hero">
+        <div class="hero__content">
+          <h1 class="hero__title">
+            "A <span>super solution</span>" for your <span>business.</span>
+          </h1>
+          <p class="hero__para">
+            Our marketing and sales automation help you scale your outreach to get
+            more leads for your company.
+          </p>
+          <button class="hero__btn btn">Request Beta Access</button>
+        </div>
+        <div class="hero__img"></div>
+        <div class="hero__info">
+          <div class="hero__info-card">
+            <h1 class="hero__info-card__title">2K+</h1>
+            <p class="hero__info-card-para">Companies</p>
+          </div>
+
+          <div class="hero__info-card">
+            <h1 class="hero__info-card__title">8</h1>
+            <p class="hero__info-card-para">Languages</p>
+          </div>
+
+          <div class="hero__info-card">
+            <h1 class="hero__info-card__title">1.2M</h1>
+            <p class="hero__info-card-para">Leads</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <section class="testimonial">
+      <div class="container">
+        <div class="testimonial__img"></div>
+        <div class="testimonial__pattern"></div>
+        <div class="testimonial__info">
+          <h1 class="testimonial__info-title">It just <span>works.</span></h1>
+          <p class="testimonial__info-para">
+            “I really like how it is an all-in-one solution that handle many of
+            the tasks that you would normally need separate tools to do the same
+            job. This thing is a miracle worker.”
+          </p>
+          <div class="testimonial__info-person">
+            <h2 class="testimonial__info-person__name">Jeremy Robinson</h2>
+            <p class="testimonial__info-person__position">Cmo, Fylo</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer__info">
+        <a href="#" class="footer__info-logo">
+          <img src="/assets/logo.svg" alt="footer logo" />
+        </a>
+        <p class="footer__info-copyright">Copyright - Suite</p>
+        <div class="footer__info-social">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
