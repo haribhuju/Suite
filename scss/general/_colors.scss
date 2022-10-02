@@ -1,0 +1,12 @@
+$colors: (
+    "main-bg": #FAF8F6,
+    "footer-bg": #F3EDE7,
+
+    "dark-blue": #172339,
+
+    "text": #49566D
+);
+
+@function color($colorName){
+    @return map-get($colors, $colorName);
+}
