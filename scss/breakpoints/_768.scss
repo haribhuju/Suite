@@ -20,7 +20,7 @@
       z-index: 1;
 
       &-title {
-        font-size: 5.6rem;
+        font-size: clamp(5.6rem ,calc(5rem + 2vw), 7.2rem);
         line-height: 6.4rem;
         letter-spacing: -0.07rem;
 
