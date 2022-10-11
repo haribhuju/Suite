@@ -1,0 +1,93 @@
+@use '../general/colors' as clrs;
+
+.hero {
+    margin-top: 8.3rem;
+
+    & > * {
+        margin-top: 5.6rem;
+    }
+
+    &__text {
+        &-title {
+            font-size: clamp(3.8rem, 4vw + 1rem, 5.6rem);
+            line-height: 4.4rem;
+            letter-spacing: -0.05rem;
+            font-weight: 400;
+        
+            margin-bottom: 3.2rem;
+
+            span {
+                font-weight: 700;
+            }
+
+            &__pattern {
+                background-image: url(assets/pattern-curved-line-1.svg);
+                background-size: 58%;
+                background-repeat: no-repeat;
+                background-position: right top;
+                padding-top: 0.8em;
+            }
+        }
+
+        &-para {
+            color: var(para-color);
+            font-size: 1.6rem;
+            line-height: 2.8rem;
+            letter-spacing: 0.008rem;
+            font-weight: 400;
+        
+            margin-bottom: 3.2rem;
+        }
+
+        &-btn {
+            color: clrs.color(main-bg);
+            background-color: clrs.color(section-bg);
+            font-weight: 700;
+            font-size: 1.8rem;
+            line-height: 3.2rem;
+        
+            padding: 0.8em 1.7em;
+            margin-bottom: 3.2rem;
+        
+        }
+
+        &-img {
+            width: 98%;
+            margin: 0 auto;
+            padding-top: 5.5em;
+        }
+
+
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 3.2rem;
+        
+        &-card {
+            text-transform: uppercase;
+            text-align: center;
+
+            &__title {
+                color: clrs.color(section-bg);
+                font-size: 4.8rem;
+                line-height: 5.6rem;
+                font-weight: 700;
+            }
+
+            &__mini-title {
+                color: clrs.color(para-color);
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.6rem;
+                letter-spacing: 0.25rem;
+            }
+        }
+    }
+}
+
+.desktop__only {
+    display: none;
+}

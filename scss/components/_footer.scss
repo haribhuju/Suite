@@ -1,0 +1,27 @@
+@use '../general/colors' as clrs;
+
+.footer {
+    background-color: clrs.color(footer-bg);
+    position: relative;
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-logo {
+            padding-top: calc(6.4em - 1.6em + 14em);
+        }
+
+        &-text {
+            color: clrs.color(para-bg);
+            font-size: 1.5rem;
+            font-weight: 400;
+            line-height: 3.2rem;
+        
+        
+            padding-top: 4.2em;
+            padding-bottom: calc(4.2em - 1.06em);
+        }
+    }
+}

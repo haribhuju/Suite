@@ -1,0 +1,118 @@
+@media (min-width: 768px) {
+  .wrapper {
+    padding: calc(1.8em + 2vh) calc(2.3em + 2vw);
+  }
+
+  .header__btn {
+    font-size: 1.6rem;
+    line-height: 3.2rem;
+    letter-spacing: -0.016rem;
+
+    padding: 0.7em 1.5em;
+  }
+
+  .hero {
+    &__text {
+      display: flex;
+      align-items: center;
+      position: relative;
+      min-height: 482px;
+      z-index: 1;
+
+      &-title {
+        font-size: 5.6rem;
+        line-height: 6.4rem;
+        letter-spacing: -0.07rem;
+
+        margin-top: 8.8rem;
+        margin-bottom: 4rem;
+      }
+      &-para {
+        max-width: 350px;
+
+        font-size: 1.6rem;
+        line-height: 2.8rem;
+
+        margin-bottom: 4rem;
+      }
+      &-btn {
+        font-size: 1.8rem;
+        line-height: 3.2rem;
+        letter-spacing: -0.018rem;
+
+        padding: 0.8em 1.7em;
+      }
+    }
+
+    &__info {
+      flex-direction: row;
+      justify-content: space-around;
+
+      margin-top: 8.8rem;
+
+      &-card {
+        &__title {
+          font-size: 4.8rem;
+          line-height: 5.6rem;
+        }
+
+        &__mini-title {
+          font-size: 1.6rem;
+          line-height: 2.6rem;
+          letter-spacing: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .mobile__only {
+    display: none;
+  }
+
+  .desktop__only {
+    display: block;
+    padding-top: 0;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    /* width: 40%; */
+    width: 282px;
+    height: 482px;
+    z-index: -1;
+
+    object-fit: cover;
+  }
+
+  .testimonial {
+    width: 100%;
+    left: 0%;
+
+    margin-top: calc(5.6rem - 1.6rem + 18.1rem - 45rem);
+    transform: translateY(45rem);
+    z-index: 1;
+
+    &__wrapper {
+      padding-top: calc(39.5rem - 18.1rem);
+    }
+  }
+
+  .footer {
+    &__wrapper {
+      padding-top: calc(6.4em - 1.6em + 45em);
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+
+      &-logo {
+        padding-top: 0;
+        padding-bottom: 3em;
+      }
+
+      &-text {
+        padding: 0;
+        padding-bottom: 3em;
+      }
+    }
+  }
+}

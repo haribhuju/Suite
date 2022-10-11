@@ -1,0 +1,7 @@
+@use '../general/colors' as clrs;
+
+.btn {
+    border: 1px solid clrs.color(section-bg);
+    border-radius: .6em;
+
+}

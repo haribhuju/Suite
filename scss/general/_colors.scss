@@ -1,10 +1,9 @@
 $colors: (
     "main-bg": #FAF8F6,
     "footer-bg": #F3EDE7,
+    "section-bg": #172339,
 
-    "dark-blue": #172339,
-
-    "text": #49566D
+    "para-color": #49566D,
 );
 
 @function color($colorName){

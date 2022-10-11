@@ -1,17 +1,17 @@
-body{
-    font-family: 'Epilogue', sans-serif;
+@use '../general/colors' as clrs;
+
+
+body {
+    font-family: "Epilogue", sans-serif;
+    background-color: clrs.color(main-bg);
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     list-style: none;
 }
 
-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
+

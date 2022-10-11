@@ -1,0 +1,80 @@
+@use '../general/colors' as clrs;
+
+.testimonial {
+    background-color: clrs.color(section-bg);
+    margin-top: calc(5.6rem - 1.6rem + 18.1rem - 14rem);
+    border-radius: 1.5rem;
+    position: relative;
+    width: 105%;
+    left: -2.5%;
+
+    transform: translateY(14rem);
+    z-index: 1;
+
+    &__wrapper {
+        padding-top: calc(39.5rem - 18.1rem);
+        padding-left: 1.6em;
+        padding-right: 1.6em;
+        text-align: center;
+
+        &-img {
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, 0);
+            /*centering the image responsive */
+            top: -18.1rem;
+        }
+
+        &-pattern {
+            margin-top: 4rem;
+        }
+
+        &-title {
+            color: clrs.color(main-bg);
+            font-size: 4rem;
+            font-weight: 400;
+            line-height: 4.8rem;
+            letter-spacing: -0.04rem;
+        
+            margin-top: 3.7rem;
+
+            span {
+                font-weight: bold;
+            }
+        }
+
+        &-para {
+            color: clrs.color(footer-bg);
+            font-size: 1.8rem;
+            font-weight: 400;
+            line-height: 3.2rem;
+            letter-spacing: 0.009rem;
+        
+            margin-top: 4rem;
+        }
+
+        &-person {
+            margin-top: 4rem;
+            text-transform: uppercase;
+            
+            &__name {
+                color: clrs.color(main-bg);
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 3.2rem;
+            }
+
+            &__title {
+                color: clrs.color(footer-bg);
+                font-size: 1.6rem;
+                font-weight: 400;
+                line-height: 2.6rem;
+                letter-spacing: 0.25rem;
+                padding-bottom: calc(4em - 1em);
+            }
+        }
+    
+    }
+
+
+}

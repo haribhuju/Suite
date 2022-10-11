@@ -1,0 +1,27 @@
+@use '../general/colors' as clrs;
+
+
+.header {
+    min-width: 343px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__logo {
+        width: 80px;
+        height: 32px;
+        object-fit: center;
+    }
+
+    &__btn {
+        color: clrs.color(section-bg);
+        font-weight: bold;
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+        letter-spacing: -0.014rem;
+    
+        padding: 0.8em 1.2em;
+    
+    }
+}
+
